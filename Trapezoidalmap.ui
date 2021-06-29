@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TrapezoidalmapClass</class>
+ <widget class="QMainWindow" name="TrapezoidalmapClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1256</width>
+    <height>862</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Trapezoidalmap</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="Display" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>1201</width>
+      <height>711</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="General_line">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>750</y>
+      <width>131</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>General Line</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="General_trap">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>750</y>
+      <width>171</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>General Trap</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Fine_loc">
+    <property name="geometry">
+     <rect>
+      <x>1042</x>
+      <y>750</y>
+      <width>141</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Find Location</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="x_value">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>740</y>
+      <width>67</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <double>1.000000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>0.010000000000000</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="y_value">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>770</y>
+      <width>67</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="maximum">
+     <double>1.000000000000000</double>
+    </property>
+    <property name="singleStep">
+     <double>0.010000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>740</y>
+      <width>68</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>770</y>
+      <width>68</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Y</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Line_num">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>750</y>
+      <width>45</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>10</number>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1256</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>Display</class>
+   <extends>QWidget</extends>
+   <header>Display.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="Trapezoidalmap.qrc"/>
+ </resources>
+ <connections/>
+</ui>
